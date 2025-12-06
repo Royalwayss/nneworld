@@ -21,7 +21,6 @@ use Session;
 class IndexController extends Controller
 {
 
-  
     public function commimgsoon(){
 		return view('front.pages.coming_soon.coming_soon');
     }
@@ -115,7 +114,6 @@ class IndexController extends Controller
             ]);
 
              if ($validator->passes()) {
-                 // Save Contact
 				$contact = new Contact;
 				$contact->name = $request->name;
 				$contact->email = $request->email;
