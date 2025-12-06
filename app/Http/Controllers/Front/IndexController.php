@@ -23,7 +23,6 @@ class IndexController extends Controller
 
   
     public function commimgsoon(){
-       
 		return view('front.pages.coming_soon.coming_soon');
     }
 
