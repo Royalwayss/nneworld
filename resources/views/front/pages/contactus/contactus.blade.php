@@ -29,15 +29,22 @@
    <!-- contact -->
    <section class="contact__area-6 pt-100 pb-150">
       <div class="container">
-         <div class="row">
-            <div class="col-lg-6">
+         <div class="row mb-2 mb-lg-5">
+            <div class="col-md-6 col-lg-4 col-12">
                <div class="contact__item">
                   <i class="fa-solid fa-phone"></i>
                   <h4 class="title">Call us</h4>
                   <p>+91 98729 23908</p>
                </div>
             </div>
-            <div class="col-lg-6">
+            <div class="col-md-6 col-lg-4 col-12">
+               <div class="contact__item">
+                  <i class="fa-solid fa-location-arrow"></i>
+                  <h4 class="title">Address</h4>
+                  <p>C-186 A, Phase VI, Focal Point, Ludhiana, Punjab 141003, India</p>
+               </div>
+            </div>
+            <div class="col-md-6 col-lg-4 col-12">
                <div class="contact__item">
                   <i class="fa-solid fa-envelope"></i>
                   <h4 class="title">Email</h4>
@@ -66,7 +73,6 @@
                               <a href="{{ route('removecartproduct',[$cartitem['id']]) }}" class="inline--link absLinkTop removeCartProduct">
                                       <span><i class="fa fa-trash "></i></span>
                               </a>
-							  
                            </div>
                         </div>
                      </div>
@@ -104,7 +110,7 @@
                         </div>
                         <div class="col-md-12">
                            <p id="contact-result"></p>
-                        </div>
+                        </div> 
                      </div>
                   </form>
                </div>

@@ -117,6 +117,7 @@ $get_categories = Category::get_categories();
                            <li><a href="{{ route('sustainability') }}">Sustainability</a></li>
                            <li><a href="{{ route('virtualtour') }}">Virtual Tour</a></li>
                            <li><a href="{{ route('forestvideo') }}">Forest Video</a></li>
+                           <li><a href="https://forest-factory.eco/">Forest Factory</a></li>
                         </ul>
                      </li>
                      <li class="has-dropdown">
@@ -127,9 +128,15 @@ $get_categories = Category::get_categories();
 						    @endforeach
                         </ul>
                      </li>
+                       <li class="has-dropdown">
+                        <a href="#">Agri Products</a>
+                        <ul class="main-dropdown">
+                           <li><a href="#">Tail Wheel Forks</a></li>
+                           <li><a href="#">Tail Wheel Hubs</a></li>
+                        </ul>
+                     </li>
                      <li><a href="javacript:;">Brands</a></li>
                      <li><a href="https://tracking.nneworld.com/login">Tracing</a></li>
-                     <li><a href="https://forest-factory.eco/">Forest Factory</a></li>
                      <li class="has-dropdown">
                         <a href="javacript:;">Stories</a>
                         <ul class="main-dropdown">

@@ -306,6 +306,31 @@
 
 
   /////////////////////////////////////////////////////
+  // 11.1. 
+  var product_slider = new Swiper(".product_slider", {
+    loop: true,
+    speed: 5000,
+    slidesPerView: 2,
+    spaceBetween: 20,
+    autoplay: {
+      delay: 3,
+    },
+    breakpoints: {
+      640: {
+        slidesPerView: 2,
+      },
+      768: {
+        slidesPerView: 3,
+      },
+      1024: {
+        slidesPerView: 3,
+      },
+      1400: {
+        slidesPerView: 3,
+      },
+    },
+  });
+  /////////////////////////////////////////////////////
   // 11. 
   var brand_slider = new Swiper(".brand__slider", {
     loop: true,
