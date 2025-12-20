@@ -1,6 +1,7 @@
 @php 
 Use App\Models\Category;
 $get_categories = Category::get_categories();
+$get_agri_categories = Category::get_categories('agri-products');
 @endphp
  <!-- Scroll to top -->
       <button id="scroll_top" class="scroll-top">
@@ -32,6 +33,14 @@ $get_categories = Category::get_categories();
                         <ul>
 						    @foreach($get_categories as $category)
                               <li><a href="{{ url($category['category_url']) }}">{{  $category['category_name'] }}</a></li>
+						    @endforeach
+                        </ul>
+                     </li>
+					  <li>
+                        <a href="javacript:;">Agri Products</a>
+                        <ul>
+						    @foreach($get_agri_categories as $agri_category)
+                              <li><a href="{{ url($agri_category['category_url']) }}">{{  $agri_category['category_name'] }}</a></li>
 						    @endforeach
                         </ul>
                      </li>
@@ -124,6 +133,14 @@ $get_categories = Category::get_categories();
                         <ul class="main-dropdown">
                             @foreach($get_categories as $category)
                               <li><a href="{{ url($category['category_url']) }}">{{  $category['category_name'] }}</a></li>
+						    @endforeach
+                        </ul>
+                     </li>
+					<li class="has-dropdown">
+                        <a href="javacript:;">Agri Products</a>
+                       <ul class="main-dropdown">
+						    @foreach($get_agri_categories as $agri_category)
+                              <li><a href="{{ url($agri_category['category_url']) }}">{{  $agri_category['category_name'] }}</a></li>
 						    @endforeach
                         </ul>
                      </li>

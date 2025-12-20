@@ -1,6 +1,7 @@
 <?php 
 Use App\Models\Category;
 $get_categories = Category::get_categories();
+$get_agri_categories = Category::get_categories('agri-products');
 ?>
  <!-- Scroll to top -->
       <button id="scroll_top" class="scroll-top">
@@ -32,6 +33,14 @@ $get_categories = Category::get_categories();
                         <ul>
 						    <?php $__currentLoopData = $get_categories; $__env->addLoop($__currentLoopData); foreach($__currentLoopData as $category): $__env->incrementLoopIndices(); $loop = $__env->getLastLoop(); ?>
                               <li><a href="<?php echo e(url($category['category_url'])); ?>"><?php echo e($category['category_name']); ?></a></li>
+						    <?php endforeach; $__env->popLoop(); $loop = $__env->getLastLoop(); ?>
+                        </ul>
+                     </li>
+					  <li>
+                        <a href="javacript:;">Agri Products</a>
+                        <ul>
+						    <?php $__currentLoopData = $get_agri_categories; $__env->addLoop($__currentLoopData); foreach($__currentLoopData as $agri_category): $__env->incrementLoopIndices(); $loop = $__env->getLastLoop(); ?>
+                              <li><a href="<?php echo e(url($agri_category['category_url'])); ?>"><?php echo e($agri_category['category_name']); ?></a></li>
 						    <?php endforeach; $__env->popLoop(); $loop = $__env->getLastLoop(); ?>
                         </ul>
                      </li>
@@ -124,6 +133,14 @@ $get_categories = Category::get_categories();
                         <ul class="main-dropdown">
                             <?php $__currentLoopData = $get_categories; $__env->addLoop($__currentLoopData); foreach($__currentLoopData as $category): $__env->incrementLoopIndices(); $loop = $__env->getLastLoop(); ?>
                               <li><a href="<?php echo e(url($category['category_url'])); ?>"><?php echo e($category['category_name']); ?></a></li>
+						    <?php endforeach; $__env->popLoop(); $loop = $__env->getLastLoop(); ?>
+                        </ul>
+                     </li>
+					<li class="has-dropdown">
+                        <a href="javacript:;">Agri Products</a>
+                       <ul class="main-dropdown">
+						    <?php $__currentLoopData = $get_agri_categories; $__env->addLoop($__currentLoopData); foreach($__currentLoopData as $agri_category): $__env->incrementLoopIndices(); $loop = $__env->getLastLoop(); ?>
+                              <li><a href="<?php echo e(url($agri_category['category_url'])); ?>"><?php echo e($agri_category['category_name']); ?></a></li>
 						    <?php endforeach; $__env->popLoop(); $loop = $__env->getLastLoop(); ?>
                         </ul>
                      </li>

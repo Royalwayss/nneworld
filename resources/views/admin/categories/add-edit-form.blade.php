@@ -4,6 +4,21 @@
 				  <input type="hidden" name="id" value="{{ $id }}">
 				  @endif
 				 <div class="row">
+				 
+				 
+				  <div class="form-group col-6">
+					<label for="category_name">Category For<span class="red_star"> *</span></label>
+					<select type="textbox"  class="form-control forminput"   id="category_type" name="category_type">
+					    <option value="normal-products" @if(!empty($id) && $row['category_type'] == 'normal-products') selected @endif>Normal Products</option>
+					    <option value="agri-products" @if(!empty($id) && $row['category_type'] == 'agri-products') selected @endif>Agri Products</option>
+					</select>
+					<p class="error-message" id="error-category_name"></p>
+			     </div>
+				 
+				 
+				 
+				 
+				 
 				 <div class="form-group col-6">
 					<label for="parent_id">Select Parent Category<span class="red_star"> *</span></label>
 					<select id="parent_id" name="parent_id" class="form-control forminput">

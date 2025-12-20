@@ -29,7 +29,8 @@ class IndexController extends Controller
         $this->checkVistor();	
         $meta =  meta('/');
 		$categories = Category::get_categories(); 
-        return view('front.pages.home.index')->with(compact('meta','categories'));
+		$agiri_categories = Category::get_categories('agri-products'); 
+        return view('front.pages.home.index')->with(compact('meta','categories','agiri_categories'));
     }
 	
 	public function aboutus(){  

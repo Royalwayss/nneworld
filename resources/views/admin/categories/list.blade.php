@@ -85,6 +85,7 @@ tr.heading_enable {
                   <tr>
                       <th>ID</th>
                       <th>Image</th>
+					  <th>Category For</th>
                       <th>Name</th>
                       <th>Parent Category</th>
                       <th>Status</th>
@@ -130,6 +131,7 @@ tr.heading_enable {
     columns: [
         { data: 'id', name: 'id' },
         { data: 'image', name: 'image' },
+        { data: 'category_type', name: 'category_type' },
         { data: 'category_name', name: 'category_name' },
         { data: 'parent_id', name: 'parent_id' },
         { data: 'status', name: 'status' },

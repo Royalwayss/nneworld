@@ -48,6 +48,13 @@ class CategoryController extends Controller
 					}
 
                 })
+				->addColumn('category_type', function ($category) {
+                    if($category->category_type == 'normal-products'){
+						return 'Normal Products';	
+					}else{
+						return 'Agiri Products';	
+					}
+                })
 				->addColumn('parent_id', function ($category) {
                     if(!empty($category->parent_id)){
 							
@@ -156,6 +163,7 @@ class CategoryController extends Controller
 					 $category = Category::find($id);
 				 }
 				 
+				$category->category_type = $data['category_type'];
 				$category->category_name = $data['category_name'];
 				$category->category_url = $data['category_url'];
 				$category->description = trim($data['description']); 

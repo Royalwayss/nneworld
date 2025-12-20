@@ -9,7 +9,9 @@
             <div class="overlay"></div>
          </div>
       </section>
-      <section class="service__area pt-150 pb-130">
+	  
+      <?php if(!empty($categories)): ?>
+	  <section class="service__area pt-150 pb-130">
          <div class="container">
             <div class="bg-light1 border-radius-25 pt-120 px-lg-5 px-4 pb-90 pb-120">
                <div class="row pb-120">
@@ -62,7 +64,67 @@
             </div>
          </div>
       </section>
-      <section class="about__area">
+      <?php endif; ?>
+	  
+	  <?php if(!empty($agiri_categories)): ?>
+	  <section class="service__area pt-150 pb-130">
+         <div class="container">
+            <div class="bg-light1 border-radius-25 pt-120 px-lg-5 px-4 pb-90 pb-120">
+               <div class="row pb-120">
+                  <div class="col-xxl-7 col-xl-7 col-xl-7">
+                     <div class="service__title-wrap" data-aos="fade-up">
+                        <h2 class="sec-subtitle">Our Categories
+                        </h2>
+                        <h3 class="sec-title" data-aos="fade-up">Custom Bicycle Solutions Tailored to Every Need</h3>
+                     </div>
+                  </div>
+                  <div class="col-xxl-5 col-xl-5 col-xl-5">
+                     <div class="service__text  pt-0">
+                        <p class="ms-0" data-aos="fade-left">Explore our wide range of solutions including OEM & ODM bicycle manufacturing,
+                           premium e-bikes, and high-performance components. Whether you're building your brand or
+                           enhancing your product line, our categories cover everything from innovation to scalability.
+                        </p>
+                     </div>
+                  </div>
+               </div>
+            </div>
+            <div class="service-inner px-lg-5 px-4">
+               <div class="row pt-4">
+                  
+				  
+				  <?php $__currentLoopData = $agiri_categories; $__env->addLoop($__currentLoopData); foreach($__currentLoopData as $category): $__env->incrementLoopIndices(); $loop = $__env->getLastLoop(); ?>
+				  <div class="col-xxl-4 col-xl-4 col-xl-4 col-md-6 mb-4">
+                     <div class="service__item style2">
+                        <div class="service__content">
+                           <div class="icon-box">
+						      <?php if(!empty($category['image'])): ?>  
+                              <img src="<?php echo e(asset('front/assets/images/category/'.$category['image'])); ?>" alt="<?php echo e($category['category_name']); ?>" title="<?php echo e($category['category_name']); ?>">
+							  <?php endif; ?>
+                           </div>
+                           <a href="<?php echo e(url($category['category_url'])); ?>">
+                              <div class="service__title"><?php echo e($category['category_name']); ?></div>
+                           </a>
+                           <p><?php echo $category['description']; ?></p>
+                           
+                           <a class="db-btn-arrow" href="<?php echo e(url($category['category_url'])); ?>">Read More <i
+                              class="fa-solid fa-arrow-right"></i>
+                           </a>
+                        </div>
+                     </div>
+                  </div>
+                  <?php endforeach; $__env->popLoop(); $loop = $__env->getLastLoop(); ?>
+				  
+				 
+			   
+			   </div>
+            </div>
+         </div>
+      </section>
+      <?php endif; ?>
+	  
+	  
+	  
+	  <section class="about__area">
          <div class="container">
             <div class="row">
                <div class="col-xxl-6 col-xl-6 col-xl-6 col-md-6">
