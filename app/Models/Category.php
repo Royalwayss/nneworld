@@ -8,7 +8,11 @@ class Category extends Model
 {
      public static function get_categories($type='normal-products'){
 		$plans = [];
-		$categories = Category::with('sub_categories')->select('id','category_name','category_url','description','image')->where('category_type',$type)->where('parent_id',NULL)->where('status','1')->orderby('sortorder','asc')->get()->toArray();
+		$categories = Category::with('sub_categories')->select('id','category_name','category_url','description','image');
+		if($type != '' && $type != 'all'){
+			$categories = $categories->where('category_type',$type);
+		}
+		$categories = $categories->where('parent_id',NULL)->where('status','1')->orderby('sortorder','asc')->get()->toArray();
 		return $categories;
 	}
 	

@@ -110,7 +110,7 @@ class ProdoctsController extends Controller
 					$data['product'] = [];
 					$popup_slider = '';
 				}
-			$data['categories'] = Category::get_categories(); 
+			$data['categories'] = Category::get_categories('all'); 
 			$data['components'] = Component::orderby('sort_order','asc')->get(); 
 			$html = (String)View::make('admin.products.addeditproduct',$data);
 			return response()->json(['status'=>true,'html'=>$html,'popup_slider'=>$popup_slider]);
@@ -254,7 +254,7 @@ class ProdoctsController extends Controller
 		if($request->ajax()){
 			$data =$request->all();
 			$id = $data['imageid'];
-			$property_image = PropertyImage::find($id);
+			$property_image = ProductImage::find($id);
 			$property_image->image_order = $data['imagesort'];
 			$property_image->save();
 			return true;
@@ -266,14 +266,14 @@ class ProdoctsController extends Controller
 		if($request->ajax()){
 			$data =$request->all();
 			$id = $data['id'];
-			$getdetails = PropertyImage::find($id);
+			$getdetails = ProductImage::find($id);
             $destinationPath = 'assets/front/projects/';
             if( $getdetails->image !=""){
                 $folders = array('large');
 				foreach($folders as $folder){
 					$img_path = $destinationPath.''.$folder.'/'.$getdetails->image;
 					if (file_exists( public_path().'/'.$img_path)){
-					   unlink($img_path);
+					  // unlink($img_path);
 					}
                 }
             }
