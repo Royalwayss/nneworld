@@ -1,6 +1,8 @@
 @extends('front.layout.layout')
 @section('content')
-
+<?php 
+Use App\Models\ProductImage;
+?>
 <style>
    
 </style>
@@ -60,9 +62,18 @@
                   <div class="fullWidth text-center itemEnquiry">
                      <div class="centeredImgEnquire text-left iconBefore--enquire">
                         <div class="fullWidth">
-                           <div class="imgHolderEnquire" @if(!empty($cartitem['product_image'])) style="background-image: url('{{ asset('front/assets/images/products/large/'.$cartitem['product_image']['image']) }}');" @endif></div>
-                           <div class="rightDescEnquire">
-                              <h6 class="mb-0 fullWidth text-left">{{ $cartitem['product_name']  }}</h6>
+						<?php 
+						$product_url = route('product',[$cartitem['product_id'],$cartitem['product_url']]);
+						$product_image = ProductImage::where('product_id',$cartitem['product_id'])->orderby('image_order','asc')->first(); ?>
+                           <a href="{{ $product_url }}">
+						   <div class="imgHolderEnquire" @if(!empty($product_image)) style="background-image: url('{{ asset('front/assets/images/products/large/'.$product_image['image']) }}');" @endif></div>
+                           </a>
+						   <div class="rightDescEnquire">
+                              <a href="{{ $product_url }}">
+								  <h6 class="mb-0 fullWidth text-left">
+								  {{ $cartitem['product_name']  }}
+								  </h6>
+							   </a>
                               <a href="{{ route('removecartproduct',[$cartitem['id']]) }}" class="inline--link absLinkTop removeCartProduct">
                                       <span><i class="fa fa-trash "></i></span>
                               </a>
