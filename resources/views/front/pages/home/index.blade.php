@@ -35,33 +35,33 @@
       <div class="service-inner px-lg-5 px-4">
          <div class="row pt-4">
             <div class="swiper product_slider">
-            <div class="swiper-wrapper">
-               @foreach($categories as $category)
-               <div class="swiper-slide">
-                  <div class="service__item style2">
-                     <div class="service__content">
-                        <div class="icon-box">
-                           @if(!empty($category['image']))
-                           <img src="{{ asset('front/assets/images/category/'.$category['image']) }}"
-                              alt="{{ $category['category_name'] }}" title="{{ $category['category_name'] }}">
-                           @endif
-                        </div>
-                        <a href="{{ url($category['category_url']) }}">
-                           <div class="service__title">{{ $category['category_name'] }}</div>
-                        </a>
-                        <p>@php echo $category['description']; @endphp</p>
+               <div class="swiper-wrapper">
+                  @foreach($categories as $category)
+                  <div class="swiper-slide">
+                     <div class="service__item style2">
+                        <div class="service__content">
+                           <div class="icon-box">
+                              @if(!empty($category['image']))
+                              <img src="{{ asset('front/assets/images/category/'.$category['image']) }}"
+                                 alt="{{ $category['category_name'] }}" title="{{ $category['category_name'] }}">
+                              @endif
+                           </div>
+                           <a href="{{ url($category['category_url']) }}">
+                              <div class="service__title">{{ $category['category_name'] }}</div>
+                           </a>
+                           <p>@php echo $category['description']; @endphp</p>
 
-                        <a class="db-btn-arrow" href="{{ url($category['category_url']) }}">Read More <i
-                              class="fa-solid fa-arrow-right"></i>
-                        </a>
+                           <a class="db-btn-arrow" href="{{ url($category['category_url']) }}">Read More <i
+                                 class="fa-solid fa-arrow-right"></i>
+                           </a>
+                        </div>
                      </div>
                   </div>
+                  @endforeach
                </div>
-               @endforeach
             </div>
          </div>
       </div>
-   </div>
    </div>
 </section>
 <section class="counter__area bg-white">
@@ -114,22 +114,17 @@
             <div class="about__content">
                <h2 class="sec-subtitle" data-aos="fade-up" data-aos-delay="100">ABOUT US
                </h2>
-               <h3 class="sec-title" data-aos="fade-right" data-aos-delay="200">NNE AT A GLANCE:</h3>
+               <h3 class="sec-title" data-aos="fade-right" data-aos-delay="200">Legacy. Innovation. Mobility.</h3>
                <div class="">
-                  <p data-aos="fade-left" data-aos-delay="250">NNE World, promoted by Navyug Group, Ludhiana, is a
-                     leading bicycle manufacturer catering to
-                     the needs of bicycle lovers worldwide. As a recognized star export house by the Government
-                     of India, we are committed to delivering top-quality bicycles for both the Indian market and
-                     OEM purposes.
+                  <p data-aos="fade-left" data-aos-delay="250">Navyug Namdhari Eco Drive (NNE) carries forward a legacy
+                     rooted in the early years of independent India, when our elders founded Navyug Bicycle Industries
+                     in 1950. Established in 2022, NNE is part of the NNE Group, originally formed in 2005 and continues
+                     to build on decades of engineering, manufacturing and global trade expertise.
                   </p>
-                  <p data-aos="fade-right" data-aos-delay="250">NNE specialize in producing a wide range of
-                     bicycles to suit every preference. Whether you’re
-                     an avid mountain biker, a road cycling enthusiast, a leisurely cruiser, or seeking the
-                     eco-friendly advantages of electric bikes, NNE have you covered.
-                  </p>
-                  <p data-aos="fade-left" data-aos-delay="250">We are a leading producer of MTB, Road, Cruiser,
-                     and Hybrid in addition to electric bikes and
-                     suspension forks for OEM’s and ODM.
+                  <p data-aos="fade-right" data-aos-delay="250">Recognised by the Government of India as a Star Export
+                     House, we operate across B2B and B2C markets on five continents. As an ODM partner, we also offer
+                     white-label solutions for leading global brands, delivering innovation, reliability and scalable
+                     growth.
                   </p>
                </div>
                <div data-aos="fade-up" data-aos-delay="300">
@@ -151,7 +146,8 @@
                <div class="service__title-wrap" data-aos="fade-up">
                   <h2 class="sec-subtitle">Agriculture Range
                   </h2>
-                  <h3 class="sec-title" data-aos="fade-up">Custom Agriculture Solutions Tailored to Every Agriculture Need</h3>
+                  <h3 class="sec-title" data-aos="fade-up">Custom Agriculture Solutions Tailored to Every Agriculture
+                     Need</h3>
                </div>
             </div>
             <div class="col-xxl-5 col-xl-5 col-xl-5">
@@ -160,7 +156,7 @@
                      manufacturing,
                      premium e-bikes, and high-performance components. Whether you're building your brand or
                      enhancing your product line, our categories cover everything from innovation to scalability.
-                     </p>
+                  </p>
                </div>
             </div>
          </div>
@@ -168,36 +164,35 @@
       <div class="service-inner px-lg-5 px-4">
          <div class="row pt-4">
             <div class="swiper product_slider">
-            <div class="swiper-wrapper">
-               @foreach($categories as $category)
-               <div class="swiper-slide">
-                  <div class="service__item style2">
-                     <div class="service__content">
-                        <div class="icon-box">
-                           @if(!empty($category['image']))
-                           <img src="{{ asset('front/assets/images/category/'.$category['image']) }}"
-                              alt="{{ $category['category_name'] }}" title="{{ $category['category_name'] }}">
-                           @endif
-                        </div>
-                        <a href="{{ url($category['category_url']) }}">
-                           <div class="service__title">{{ $category['category_name'] }}</div>
-                        </a>
-                        <p>@php echo $category['description']; @endphp</p>
+               <div class="swiper-wrapper">
+                  @foreach($categories as $category)
+                  <div class="swiper-slide">
+                     <div class="service__item style2">
+                        <div class="service__content">
+                           <div class="icon-box">
+                              @if(!empty($category['image']))
+                              <img src="{{ asset('front/assets/images/category/'.$category['image']) }}"
+                                 alt="{{ $category['category_name'] }}" title="{{ $category['category_name'] }}">
+                              @endif
+                           </div>
+                           <a href="{{ url($category['category_url']) }}">
+                              <div class="service__title">{{ $category['category_name'] }}</div>
+                           </a>
+                           <p>@php echo $category['description']; @endphp</p>
 
-                        <a class="db-btn-arrow" href="{{ url($category['category_url']) }}">Read More <i
-                              class="fa-solid fa-arrow-right"></i>
-                        </a>
+                           <a class="db-btn-arrow" href="{{ url($category['category_url']) }}">Read More <i
+                                 class="fa-solid fa-arrow-right"></i>
+                           </a>
+                        </div>
                      </div>
                   </div>
+                  @endforeach
                </div>
-               @endforeach
             </div>
          </div>
       </div>
    </div>
-   </div>
 </section>
-
 <section class="process__area-4 bg-light1 pt-100 pb-100">
    <div class="container">
       <div class="row">
@@ -334,23 +329,22 @@
    <div class="who__area_inner infra pt-5 pb-5">
       <div class="container mt-xl-5 mb-xl-5">
          <div class="row">
-            <div class="col-xxl-6 col-xl-6 col-lg-12">
-               <div class="who__left">
-                  <div class="sec-title-wrap pb-3" data-aos="fade-up">
+            <div class="sec-title-wrap pb-3" data-aos="fade-up">
                      <h2 class="sec-subtitle" data-aos="fade-up">Infrastructure
                      </h2>
                      <h3 class="sec-title" data-aos="fade-right">Strong Infrastructure That Drives Innovation
                      </h3>
                   </div>
+            <div class="col-xxl-6 col-xl-6 col-lg-12">
+               <div class="who__left">
                   <div class="who__features">
                      <div class="who__feature" data-aos="fade-up" data-aos-delay="300">
                         <div class="number">
                            <span class="color-base">01</span>
                         </div>
                         <div class="who__content">
-                           <h4 class="title">Modern Manufacturing Units</h4>
-                           <p>Equipped with cutting-edge machinery and quality control systems, our facilities
-                              ensure precision, consistency, and large-scale production.
+                           <h4 class="title">Product Testing & Validation Facility</h4>
+                           <p>Our fully equipped in-house laboratories validate bicycles and components as per the latest international standards, ensuring performance, safety, and durability before every product reaches the market.
                            </p>
                         </div>
                      </div>
@@ -359,9 +353,8 @@
                            <span class="color-base">02</span>
                         </div>
                         <div class="who__content">
-                           <h4 class="title">Streamlined Supply Chain</h4>
-                           <p>With an optimized logistics network, we guarantee timely delivery and smooth
-                              operations across all verticals.
+                           <h4 class="title">Advanced Robotic & CNC Systems</h4>
+                           <p>With 7-axis robotic welding and 5-axis CNC tubular bending, our precision-driven infrastructure enables high accuracy, repeatability and superior structural integrity across all frames and components.
                            </p>
                         </div>
                      </div>
@@ -370,9 +363,45 @@
                            <span class="color-base">03</span>
                         </div>
                         <div class="who__content">
-                           <h4 class="title">Smart Warehousing</h4>
-                           <p>Our strategically located, tech-enabled warehouses are designed for fast, safe,
-                              and scalable storage and distribution.
+                           <h4 class="title">Smart Frame Fabrication Shop</h4>
+                           <p>Integrated TIG/Argon welding lines, automated tube processing, and material-ready workflows streamline fabrication while maintaining strict quality benchmarks.
+                           </p>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+            <div class="col-xxl-6 col-xl-6 col-lg-12">
+               <div class="who__left">
+                  <div class="who__features">
+                     <div class="who__feature" data-aos="fade-up" data-aos-delay="300">
+                        <div class="number">
+                           <span class="color-base">04</span>
+                        </div>
+                        <div class="who__content">
+                           <h4 class="title">Painting & Decal Pasting Shop</h4>
+                           <p>Equipped with cutting-edge machinery and quality control systems, our facilities
+                              ensure precision, consistency, and large-scale production.
+                           </p>
+                        </div>
+                     </div>
+                     <div class="who__feature" data-aos="fade-up" data-aos-delay="600">
+                        <div class="number">
+                           <span class="color-base">05</span>
+                        </div>
+                        <div class="who__content">
+                           <h4 class="title">Smart Assembly Lines</h4>
+                           <p>Powered by Industry 4.0 technologies, our wheel and e-bike assembly lines include Asia’s first smart e-bike assembly setup – designed for speed, scalability and precision.
+                           </p>
+                        </div>
+                     </div>
+                     <div class="who__feature" data-aos="fade-up" data-aos-delay="900">
+                        <div class="number">
+                           <span class="color-base">06</span>
+                        </div>
+                        <div class="who__content">
+                           <h4 class="title">Storage & Dispatch</h4>
+                           <p>With optimised warehousing and 40’ container load capabilities, we ensure secure storage, rapid dispatch and seamless global logistics.
                            </p>
                         </div>
                      </div>

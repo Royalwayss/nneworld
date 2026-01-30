@@ -4403,6 +4403,22 @@ header.pos-abs {
   padding-top: 130px;
   padding-bottom: 120px;
 }
+.counter__inner.flx .counter__item{
+  display: block;
+  
+}
+.counter__inner.flx {
+    gap: 30px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    position: relative;
+    padding-top: 130px;
+    padding-bottom: 120px;
+}
 @media (max-width: 1199px) {
   .counter__inner {
     padding-top: 100px;

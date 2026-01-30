@@ -72,7 +72,7 @@
         <div class="container">
             <div class="row">
                 <div class="col-xxl-12">
-                    <div class="counter__inner">
+                    <div class="counter__inner flx">
                         <div class="counter__item">
                             <div class="counter__number counter_slow underline-5">25+ <span>25+</span></div>
                             <h3 class="counter__title underline-2">Years of <br> Experience</h3>
@@ -110,21 +110,28 @@
                                 <div class="number">
                                 </div>
                                 <div class="who__content">
-                                    <h4 class="title">Our Mission</h4>
-                                    <p>Our mission is centered around placing India at the forefront of the global
-                                        mobility sector. We strive to achieve each milestone that propels us closer to
-                                        this objective, firmly establishing India’s position on the world map alongside
-                                        other leading countries in the mobility industry.</p>
+                                    <h4 class="title">Our Purpose </h4>
+                                    <p>At Navyug Namdhari Eco Drive, our purpose is to create meaningful environmental impact by adopting sustainable manufacturing practices and advancing micro-mobility solutions. We aim to redefine the future of transportation by making it smarter, cleaner, and more accessible – while committing to becoming <strong>carbon negative by 2030.</strong> Our vision is to be the difference in how mobility supports both people and the planet. </p>
                                 </div>
                             </div>
                             <div class="who__feature d-block" data-aos="fade-right" data-aos-delay="200">
                                 <div class="who__content">
-                                    <h4 class="title">OUR VISION</h4>
-                                    <p> We aim to create a platform that addresses every customer requirement,
-                                        positioning ourselves as one of the premier entities in the mobility industry.
-                                        Our primary focus is to help customers achieve their business goals through
-                                        innovation-driven growth, all while incorporating sustainable technology at our
-                                        core.</p>
+                                    <h4 class="title">OUR Mission</h4>
+                                    <p> Our mission is to build long-term value for our stakeholders while addressing one of humanity’s most pressing challenges – sustainable mobility. We strive to go beyond conventional bicycles by developing intelligent, future-ready transportation solutions that balance profitability with responsibility. For us, progress means innovation with purpose. </p>
+                                </div>
+                            </div>
+                            <div class="who__feature d-block" data-aos="fade-right" data-aos-delay="200">
+                                <div class="who__content">
+                                    <h4 class="title">Our Values</h4>
+                                    <p>Everything we do at NNE is guided by four core pillars:</p>
+                                    <ul>
+  <li><strong>Innovation</strong> – Constantly pushing boundaries in design, technology and engineering.</li>
+  <li><strong>Eco-Friendly Thinking</strong> – Embedding sustainability into every process and product.</li>
+  <li><strong>Smart Customer Value</strong> – Delivering meaningful, practical and scalable solutions.</li>
+  <li><strong>Respect</strong> – For people, partnerships, communities and the environment.</li>
+</ul>
+
+                                    <p> These values shape our culture, decisions and long-term direction. </p>
                                 </div>
                             </div>
                         </div>
