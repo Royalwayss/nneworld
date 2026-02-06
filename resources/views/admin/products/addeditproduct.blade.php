@@ -52,7 +52,7 @@
             }else{
              foreach($components as $component){
               if($component['is_default'] == '1'){
-            	  $selected_components[] = $component['id'];
+            	 // $selected_components[] = $component['id'];
               }
              }
             }
