@@ -100,6 +100,7 @@
    from {opacity: 0;}
    to {opacity: 1;}
    }
+   		
 </style>
 <!-- Content Wrapper. Contains page content -->
 <div class="content-wrapper">

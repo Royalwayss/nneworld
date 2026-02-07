@@ -48,10 +48,6 @@
 			  margin-left:10px;
          }
 
-		.select2-search--inline{ display:none; }
-		
-
-
       </style>
    </head>
    <body class="hold-transition sidebar-mini layout-fixed layout-navbar-fixed layout-footer-fixed">
