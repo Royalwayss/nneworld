@@ -214,8 +214,8 @@ class ProdoctsController extends Controller
                     $largeImagePath = 'front/assets/images/products/large/'.$imageName;
                     $mediumImagePath = 'front/assets/images/products/medium/'.$imageName;
                   
-                    $image->resize(1290,628)->save($largeImagePath);
-                    $image->resize(410,512)->save($mediumImagePath);
+                    //$image->resize(1290,628)->save($largeImagePath);
+                    //$image->resize(410,512)->save($mediumImagePath);
                    
 					$product_image = new ProductImage;
 					$product_image->product_id = $product_id;

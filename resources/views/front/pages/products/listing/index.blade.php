@@ -36,7 +36,7 @@
 							@foreach($products as $product)
 							@php 
 							$product_url = route('product',[$product['id'],$product['product_url']]);
-							$product_image = isset($product['product_image']['image']) ? 'front/assets/images/products/medium/'.$product['product_image']['image'] : '';
+							$product_image = isset($product['product_image']['image']) ? 'front/assets/images/products/large/'.$product['product_image']['image'] : '';
 							if(empty($product_image) || !File::exists(public_path($product_image))){
 								$product_image = 'front/assets/images/no-image-found.jpg';
 							} 
