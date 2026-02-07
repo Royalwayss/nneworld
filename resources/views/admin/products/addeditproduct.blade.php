@@ -123,7 +123,7 @@
          </div>
       </div>
       <div class="row tabcontent" id="Images" style="display:none">
-         <div class="form-group col-md-8">
+         <div class="form-group col-md-12">
             <label class="col-md-12 control-label">Product Images: <span style="color:red">Dimensions (1290 X 628)</span></label>
             <div class="col-md-12">
                <table  class="table table-hover table-bordered table-striped" id="image-table" >
@@ -144,7 +144,7 @@
                            @endif
                         </td>
                         <td class="text-center">
-                           <input id="ImageSort-{{$image['id']}}"  type="number" class="" style="width:100px" value="{{$image['image_order']}}">
+                           <input id="ImageSort-{{$image['id']}}"  type="number" class="" style="width:90px" value="{{$image['image_order']}}">
                            <button data-imageid="{{$image['id']}}" style="height: 28px;padding-top: 0px" class="btn btn-success updateImageSort" type="button"> Update</button>
                         </td>
                         <td class="text-center">
