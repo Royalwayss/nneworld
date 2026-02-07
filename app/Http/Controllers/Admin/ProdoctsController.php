@@ -216,6 +216,10 @@ class ProdoctsController extends Controller
                   
                     //$image->resize(1290,628)->save($largeImagePath);
                     //$image->resize(410,512)->save($mediumImagePath);
+					
+					
+					$image->save($largeImagePath);
+                    $image->save($mediumImagePath);
                    
 					$product_image = new ProductImage;
 					$product_image->product_id = $product_id;
