@@ -10,6 +10,6 @@
       <link rel="stylesheet" href="{{ asset('front/assets/css/magnific-popup.css') }}">
       <link rel="stylesheet" href="{{ asset('front/assets/css/aos.css') }}">
       <link rel="stylesheet" href="{{ asset('front/assets/css/progressbar.css') }}">
-      <link rel="stylesheet" href="{{ asset('front/assets/css/master.css') }}">
+      <link rel="stylesheet" href="{{ asset('front/assets/css/master.css') }}?v=2.0">
       <link rel="stylesheet" href="{{ asset('front/assets/css/responsive.css') }}">
       <link rel="stylesheet" href="{{ asset('front/assets/css/custom.css') }}?v=2.0">
