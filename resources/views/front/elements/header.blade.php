@@ -150,6 +150,8 @@ $get_agri_categories = Category::get_categories('agri-products');
 									   <li><a href="#">Tail Wheel Hubs</a></li>
 									</ul>
 							</li>  */ ?>
+					    </li>
+					 </ul>
                      <li><a href="javacript:;">Brands</a></li>
                      <li><a href="https://tracking.nneworld.com/login">Tracing</a></li>
                      <li class="has-dropdown">

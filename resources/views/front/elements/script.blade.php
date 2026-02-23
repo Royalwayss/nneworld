@@ -11,6 +11,6 @@
       <script src="{{ asset('front/assets/js/ScrollSmoother.min.js') }}"></script>
       <script src="{{ asset('front/assets/js/ScrollTrigger.min.js') }}"></script>
       <script src="{{ asset('front/assets/js/vanilla-tilt.min.js') }}"></script>
-      <script src="{{ asset('front/assets/js/main.js') }}?v=2.6"></script>
+      <script src="{{ asset('front/assets/js/main.js') }}?v=2.7"></script>
       <script src="{{ asset('front/assets/js/custom.js') }}"></script>
       <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
