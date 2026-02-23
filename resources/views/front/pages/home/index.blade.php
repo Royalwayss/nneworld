@@ -1,36 +1,6 @@
 @extends('front.layout.layout')
 @section('content')
 <section class="hero">
-         <div class="hero-container">
-            <h1 class="hero-title" style="--shift-to-y: -355px;"><span>Experience The Power of</span> NNE World</h1>
-         </div>
-         <div class="hero-shape">
-            <!-- <img class="hero-img" src="https://iili.io/HOlkfV4.jpg" alt="Flower studio preview"> -->
-            <video autoplay muted playsinline loop src="front/assets/video/hero.mp4" class="hero-video"></video>
-            <div class="overlay"></div>
-         </div>
-      </section>
-	  
-      @if(!empty($categories))
-	  <section class="service__area pt-150 pb-130">
-         <div class="container">
-            <div class="bg-light1 border-radius-25 pt-120 px-lg-5 px-4 pb-90 pb-120">
-               <div class="row pb-120">
-                  <div class="col-xxl-7 col-xl-7 col-xl-7">
-                     <div class="service__title-wrap" data-aos="fade-up">
-                        <h2 class="sec-subtitle">Our Categories
-                        </h2>
-                        <h3 class="sec-title" data-aos="fade-up">Custom Bicycle Solutions Tailored to Every Need</h3>
-                     </div>
-                  </div>
-                  <div class="col-xxl-5 col-xl-5 col-xl-5">
-                     <div class="service__text  pt-0">
-                        <p class="ms-0" data-aos="fade-left">Explore our wide range of solutions including OEM & ODM bicycle manufacturing,
-                           premium e-bikes, and high-performance components. Whether you're building your brand or
-                           enhancing your product line, our categories cover everything from innovation to scalability.
-                        </p>
-                     </div>
-                  </div>
    <div class="hero-container">
       <h1 class="hero-title" style="--shift-to-y: -355px;"><span>Experience The Power of</span> NNE World</h1>
    </div>
@@ -91,77 +61,6 @@
                </div>
             </div>
          </div>
-      </section>
-      @endif
-	  
-	  @if(!empty($agiri_categories))
-	  <section class="service__area pt-150 pb-130">
-         <div class="container">
-            <div class="bg-light1 border-radius-25 pt-120 px-lg-5 px-4 pb-90 pb-120">
-               <div class="row pb-120">
-                  <div class="col-xxl-7 col-xl-7 col-xl-7">
-                     <div class="service__title-wrap" data-aos="fade-up">
-                        <h2 class="sec-subtitle">Our Categories
-                        </h2>
-                        <h3 class="sec-title" data-aos="fade-up">Custom Bicycle Solutions Tailored to Every Need</h3>
-                     </div>
-                  </div>
-                  <div class="col-xxl-5 col-xl-5 col-xl-5">
-                     <div class="service__text  pt-0">
-                        <p class="ms-0" data-aos="fade-left">Explore our wide range of solutions including OEM & ODM bicycle manufacturing,
-                           premium e-bikes, and high-performance components. Whether you're building your brand or
-                           enhancing your product line, our categories cover everything from innovation to scalability.
-                        </p>
-                     </div>
-                  </div>
-               </div>
-            </div>
-            <div class="service-inner px-lg-5 px-4">
-               <div class="row pt-4">
-                  
-				  
-				  @foreach($agiri_categories as $category)
-				  <div class="col-xxl-4 col-xl-4 col-xl-4 col-md-6 mb-4">
-                     <div class="service__item style2">
-                        <div class="service__content">
-                           <div class="icon-box">
-						      @if(!empty($category['image']))  
-                              <img src="{{ asset('front/assets/images/category/'.$category['image']) }}" alt="{{ $category['category_name'] }}" title="{{ $category['category_name'] }}">
-							  @endif
-                           </div>
-                           <a href="{{ url($category['category_url']) }}">
-                              <div class="service__title">{{ $category['category_name'] }}</div>
-                           </a>
-                           <p>@php echo $category['description']; @endphp</p>
-                           
-                           <a class="db-btn-arrow" href="{{ url($category['category_url']) }}">Read More <i
-                              class="fa-solid fa-arrow-right"></i>
-                           </a>
-                        </div>
-                     </div>
-                  </div>
-                  @endforeach
-				  
-				 
-			   
-			   </div>
-            </div>
-         </div>
-      </section>
-      @endif
-	  
-	  
-	  
-	  <section class="about__area">
-         <div class="container">
-            <div class="row">
-               <div class="col-xxl-6 col-xl-6 col-xl-6 col-md-6">
-                  <div class="about__imgs" data-aos="fade-up">
-                     <div class="image-1">
-                        <img class="border-radius-25" src="front/assets/imgs/about-3.jpg" alt="img" title="img">
-                     </div>
-                     <!-- <div class="image-2">
-=======
       </div>
    </div>
 </section>
@@ -196,7 +95,6 @@
                   <img class="border-radius-25" src="front/assets/imgs/about-3.jpg" alt="img" title="img">
                </div>
                <!-- <div class="image-2">
->>>>>>> 76c25123805c5a19e8faba8c295223c17fda0f1f
                         <img src="front/assets/imgs/about-2.jpg" alt="Image" data-speed="0.85">
                         </div> -->
                <div class="bell">

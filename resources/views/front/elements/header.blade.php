@@ -143,13 +143,13 @@ $get_agri_categories = Category::get_categories('agri-products');
 						    @foreach($get_agri_categories as $agri_category)
                               <li><a href="{{ url($agri_category['category_url']) }}">{{  $agri_category['category_name'] }}</a></li>
 						    @endforeach
-                       <li class="has-dropdown">
-                        <a href="#">Agri Products</a>
-                        <ul class="main-dropdown">
-                           <li><a href="#">Tail Wheel Forks</a></li>
-                           <li><a href="#">Tail Wheel Hubs</a></li>
-                        </ul>
-                     </li>
+							<?php /*<li class="has-dropdown">
+									<a href="#">Agri Products</a>
+									<ul class="main-dropdown">
+									   <li><a href="#">Tail Wheel Forks</a></li>
+									   <li><a href="#">Tail Wheel Hubs</a></li>
+									</ul>
+							</li>  */ ?>
                      <li><a href="javacript:;">Brands</a></li>
                      <li><a href="https://tracking.nneworld.com/login">Tracing</a></li>
                      <li class="has-dropdown">

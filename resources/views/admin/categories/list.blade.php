@@ -75,7 +75,7 @@ tr.heading_enable {
             <div class="card">
                @if($usersModule['edit_access']==1 || $usersModule['full_access']==1)
               <div class="card-header">
-                <a style="float:right" href="javascript:;" data-module="Add Category" data-href="{{ route('addeditcategory') }}" data-modal-type="small" data-id="" class="btn btn-primary addedit-modal"><i class="fa fa-plus" aria-hidden="true"></i> Add Category</a>
+                <a style="float:right" href="javascript:;" data-module="Add Category" data-href="{{ route('addeditcategory') }}" data-modal-type="wide" data-id="" class="btn btn-primary addedit-modal"><i class="fa fa-plus" aria-hidden="true"></i> Add Category</a>
               </div>
               @endif
               <!-- /.card-header -->

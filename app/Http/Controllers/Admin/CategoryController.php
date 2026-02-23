@@ -189,7 +189,24 @@ class CategoryController extends Controller
                     $ImagePath = 'front/assets/images/category/'.$imageName;
                     $image->save($ImagePath);
                     $category->image = $imageName; 
-                 }
+                }
+				
+				
+				if($request->hasFile('banner')){
+                    $category_image = $request->file('banner');
+                    $manager = new ImageManager(new Driver());
+                    $image = $manager->read($category_image);
+                    $extension = $category_image->getClientOriginalExtension();
+                    $imageName = 'banner-'.rand(1111,999999).'.'.$extension;
+                    $ImagePath = 'front/assets/images/category_banner/'.$imageName;
+                    $image->save($ImagePath);
+                    $category->banner = $imageName; 
+                }
+				
+				
+				
+				
+				
 				
 				$category->sortorder = $data['sortorder']; 
 				

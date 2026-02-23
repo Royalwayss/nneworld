@@ -57,6 +57,23 @@
 			      </div>
 			  @endif
 			  
+			  <div class="form-group col-6">
+				<label for="banner">Banner (Recommended size 4069 x 1703)<span class="red_star"> *</span></label>
+				<input type="file"  class="form-control forminput"   id="banner" name="banner">
+				<p class="error-message" id="error-banner"></p>
+			   </div>
+			  
+			  @if(!empty($id) && $row['banner'] != '')
+				  <div class="form-group col-6">
+						<label for="">Uploaded banner</label>
+						<img src="{{ asset('front/assets/images/category_banner/'.$row['banner']) }}" style="width:20%">
+						
+			      </div>
+			  @endif
+			  
+			  
+			  
+			  
 			  <div class="form-group col-12">
 				<label for="description">Description<span class="red_star"> *</span></label>
 				<textarea  class="form-control forminput"   id="description" name="description" placeholder="Description"  >
