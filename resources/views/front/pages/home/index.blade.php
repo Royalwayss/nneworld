@@ -165,7 +165,7 @@
          <div class="row pt-4">
             <div class="swiper product_slider">
                <div class="swiper-wrapper">
-                  @foreach($categories as $category)
+                  @foreach($agiri_categories as $category)
                   <div class="swiper-slide">
                      <div class="service__item style2">
                         <div class="service__content">
@@ -445,15 +445,16 @@
                         <div class="brand__slide">
                            <img src="front/assets/imgs/brand/tvs.svg" alt="img" title="img">
                         </div>
-                     </div> */ ?>
+                     </div> 
+					 <div class="swiper-slide">
+                        <div class="brand__slide">
+                           <img src="front/assets/imgs/brand/ninOne.svg" alt="img" title="img">
+                        </div>
+                     </div>
+					 */ ?>
                      <div class="swiper-slide">
                         <div class="brand__slide">
                            <img src="front/assets/imgs/brand/firefox.svg" alt="img" title="img">
-                        </div>
-                     </div>
-                     <div class="swiper-slide">
-                        <div class="brand__slide">
-                           <img src="front/assets/imgs/brand/ninOne.svg" alt="img" title="img">
                         </div>
                      </div>
                      <div class="swiper-slide">
