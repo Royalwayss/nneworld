@@ -55,6 +55,8 @@ $get_agri_categories = Category::get_categories('agri-products');
                         </ul>
                      </li>
                      <li><a href="{{ route('contactus') }}">Contact Us</a></li>
+                     <li><a rel="nofollow" target="_blank" href="https://www.instagram.com/navyug.namdhari?igsh=MWZseWRqOW54dXBwYg=="><i class="fa-brands fa-instagram"></i></a></li>
+                     <li><a rel="nofollow" target="_blank" href="https://www.linkedin.com/company/navyug-group-nng/"><i class="fa-brands fa-linkedin"></i></a></li>
                   </ul>
                </div>
             </div>
