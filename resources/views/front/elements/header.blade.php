@@ -90,21 +90,28 @@ $get_agri_categories = Category::get_categories('agri-products');
                </div>
                <div class="footer__social-3">
                   <ul>
-                     <li>
-                        <a href="javacript:;">
+                     <?php /*<li>
+                        <a rel="nofollow" href="javacript:;">
                         <i class="fa-brands fa-facebook-f"></i>
                         </a>
                      </li>
                      <li>
-                        <a href="javacript:;">
+                        <a rel="nofollow" href="javacript:;">
                         <i class="fa-brands fa-twitter"></i>
                         </a>
-                     </li>
+                     </li> */ ?>
                      <li>
-                        <a href="javacript:;">
+                        <a rel="nofollow" target="_blank" href="https://www.instagram.com/navyug.namdhari?igsh=MWZseWRqOW54dXBwYg==">
                         <i class="fa-brands fa-instagram"></i>
                         </a>
                      </li>
+					  <li>
+                        <a rel="nofollow" target="_blank" href="https://www.linkedin.com/company/navyug-group-nng/">
+                        <i class="fa-brands fa-linkedin"></i>
+                        </a>
+                     </li>
+					 
+					 
                   </ul>
                </div>
             </div>
