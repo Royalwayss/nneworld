@@ -4,7 +4,7 @@
 <main>
 
     <!-- Breadcrumb area start -->
-    <section class="breadcrumb__area" style="background-image: url('{{ asset('front/assets/imgs/ebikeBd.jpg') }}');">
+    <section class="breadcrumb__area" style="background-image: url('{{ asset('front/assets/imgs/agri.jpg') }}');">
         <div class="container">
             <div class="row">
                 <div class="col-xxl-12">

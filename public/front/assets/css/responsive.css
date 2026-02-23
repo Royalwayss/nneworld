@@ -1,4 +1,7 @@
 @media all and (max-width: 767px) {
+  .hero{
+    height: 80vh;
+  }
   .hero-title {
     font-size: 80px;
   }

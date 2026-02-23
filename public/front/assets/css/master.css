@@ -2108,8 +2108,6 @@ header.pos-abs {
 }
 .hero__area.sustain {
   padding: 220px 0;
-  /* margin: 100px 0; */
-  /* background: transparent; */
 }
 .hero__area.sustain .hero__btm {
   display: block;
@@ -4259,6 +4257,10 @@ header.pos-abs {
   padding-right: 180px;
   border-top: 2px solid rgba(255, 255, 255, 0.1);
 }
+.counter__item{
+  display: flex;
+  justify-content: space-evenly;
+}
 @media (max-width: 1919px) {
   .counter__area-3-hero {
     padding-left: 90px;
@@ -4397,16 +4399,25 @@ header.pos-abs {
   }
 }
 .counter__inner {
-  gap: 30px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-  -ms-flex-pack: justify;
-  justify-content: space-between;
   position: relative;
   padding-top: 130px;
   padding-bottom: 120px;
+}
+.counter__inner.flx .counter__item{
+  display: block;
+  
+}
+.counter__inner.flx {
+    gap: 30px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    position: relative;
+    padding-top: 130px;
+    padding-bottom: 120px;
 }
 @media (max-width: 1199px) {
   .counter__inner {
@@ -4416,11 +4427,8 @@ header.pos-abs {
 }
 @media (max-width: 767px) {
   .counter__inner {
-    gap: 50px;
     padding-top: 60px;
     padding-bottom: 60px;
-    -ms-flex-wrap: wrap;
-    flex-wrap: wrap;
   }
 }
 .counter__inner::before {
@@ -4570,7 +4578,7 @@ header.pos-abs {
 }
 .counter__number {
   font-weight: 700;
-  font-size: 100px;
+  font-size: 80px;
   line-height: 1;
   letter-spacing: -3px;
   color: var(--main-color-one);
@@ -4580,7 +4588,7 @@ header.pos-abs {
 }
 @media (max-width: 1199px) {
   .counter__number {
-    font-size: 80px;
+    font-size: 60px;
     padding-bottom: 30px;
   }
 }
@@ -6263,6 +6271,9 @@ header.pos-abs {
 .brand__slide {
   text-align: center;
 }
+.brand__slide.gray img{
+  filter: grayscale(100%) brightness(1.8) contrast(0.6);
+}
 
 .gallery__title-wrap-3 {
   padding-left: 440px;
@@ -6670,14 +6681,25 @@ header.pos-abs {
 .breadcrumb__area {
     padding-bottom: 30px;
     background-image: url(../imgs/hero/breadcrumb.png);
-    background-position: center;
+    background-position: bottom;
     background-repeat: no-repeat;
     background-size: cover;
-    height: 450px;
+    height: 400px;
     display: flex;
     justify-content: center;
     align-items: end;
     color: #fff;
+    position: relative;
+    overflow: hidden;
+    filter: grayscale(1);
+
+}
+
+.breadcrumb__area::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: rgba(0,0,0,0.5);
 }
 @media (max-width: 1199px) {
   .breadcrumb__area {
@@ -6715,6 +6737,7 @@ header.pos-abs {
   display: inline-block;
   padding-right: 40px;
   position: relative;
+  z-index: 9;
 }
 .breadcrumb__right li::after {
   position: absolute;
@@ -7065,7 +7088,7 @@ header.pos-abs {
 .footer__widgets {
   padding-top: 260px;
   padding-bottom: 65px;
-  background-color: var(--black-2);
+  background-color: var(--main-color-one);
 }
 @media (max-width: 991px) {
   .footer__widgets {
@@ -10940,8 +10963,8 @@ HOME FIVE FOOTER
   flex-direction: column;
   background: #f4f5fa;
   border-radius: 25px;
-  padding: 45px;
-  margin-bottom: 40px;
+  padding: 25px 30px 10px 30px;
+  height: 100%;
 }
 .contact__item i {
   font-size: 40px;
