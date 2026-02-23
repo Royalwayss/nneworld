@@ -6681,14 +6681,25 @@ header.pos-abs {
 .breadcrumb__area {
     padding-bottom: 30px;
     background-image: url(../imgs/hero/breadcrumb.png);
-    background-position: center;
+    background-position: bottom;
     background-repeat: no-repeat;
     background-size: cover;
-    height: 450px;
+    height: 400px;
     display: flex;
     justify-content: center;
     align-items: end;
     color: #fff;
+    position: relative;
+    overflow: hidden;
+    filter: grayscale(1);
+
+}
+
+.breadcrumb__area::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: rgba(0,0,0,0.5);
 }
 @media (max-width: 1199px) {
   .breadcrumb__area {
@@ -6726,6 +6737,7 @@ header.pos-abs {
   display: inline-block;
   padding-right: 40px;
   position: relative;
+  z-index: 9;
 }
 .breadcrumb__right li::after {
   position: absolute;

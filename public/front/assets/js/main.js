@@ -310,14 +310,14 @@
   var product_slider = new Swiper(".product_slider", {
     loop: true,
     speed: 5000,
-    slidesPerView: 2,
+    slidesPerView: 1,
     spaceBetween: 20,
     autoplay: {
       delay: 3,
     },
     breakpoints: {
       640: {
-        slidesPerView: 2,
+        slidesPerView: 1,
       },
       768: {
         slidesPerView: 3,

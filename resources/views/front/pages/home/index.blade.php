@@ -250,7 +250,7 @@
       <div class="row align-items-center">
          <div class="col-lg-3 col-12">
             <div class="sec-title-wrap pb-3" data-aos="fade-up">
-               <h2 class="sec-subtitle mb-0">Associated Brands
+               <h2 class="sec-subtitle mb-0">Our Brands
                </h2>
             </div>
          </div>
@@ -417,7 +417,7 @@
       <div class="row align-items-center">
          <div class="col-lg-3 col-12">
             <div class="sec-title-wrap pb-3" data-aos="fade-up">
-               <h2 class="sec-subtitle mb-0">Our Customers
+               <h2 class="sec-subtitle mb-0">Our Partner Brands
                </h2>
             </div>
          </div>
