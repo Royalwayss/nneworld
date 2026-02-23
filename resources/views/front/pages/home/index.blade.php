@@ -454,7 +454,7 @@
 					 */ ?>
                      <div class="swiper-slide">
                         <div class="brand__slide">
-                           <img src="front/assets/imgs/brand/firefox.svg" alt="img" title="img">
+                           <img src="front/assets/imgs/brand/firefox.jpg" alt="img" title="img">
                         </div>
                      </div>
                      <div class="swiper-slide">
