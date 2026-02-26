@@ -462,9 +462,14 @@
                            <img src="front/assets/imgs/brand/huffy.svg" alt="img" title="img">
                         </div>
                      </div>
-                     <div class="swiper-slide">
+                   <?php /*  <div class="swiper-slide">
                         <div class="brand__slide">
                            <img src="front/assets/imgs/brand/hero.svg" alt="img" title="img">
+                        </div>
+                     </div> */ ?>
+					 <div class="swiper-slide">
+                        <div class="brand__slide">
+                           <img src="front/assets/imgs/brand/hero-cycles.jpg" alt="img" title="img">
                         </div>
                      </div>
 					  <div class="swiper-slide">
