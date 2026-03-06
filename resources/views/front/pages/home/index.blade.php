@@ -166,7 +166,8 @@
             <div class="swiper product_slider">
                <div class="swiper-wrapper">
                   @foreach($agiri_categories as $category)
-                  <div class="swiper-slide">
+                  @if(!empty($category['image']))
+				  <div class="swiper-slide">
                      <div class="service__item style2">
                         <div class="service__content">
                            <div class="icon-box">
@@ -178,7 +179,7 @@
                            <a href="{{ url($category['category_url']) }}">
                               <div class="service__title">{{ $category['category_name'] }}</div>
                            </a>
-                           <p>@php echo $category['description']; @endphp</p>
+                           <p class="service_description">@php echo $category['description']; @endphp</p>
 
                            <a class="db-btn-arrow" href="{{ url($category['category_url']) }}">Read More <i
                                  class="fa-solid fa-arrow-right"></i>
@@ -186,6 +187,7 @@
                         </div>
                      </div>
                   </div>
+				   @endif
                   @endforeach
                </div>
             </div>
