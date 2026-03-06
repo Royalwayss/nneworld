@@ -37,7 +37,8 @@
             <div class="swiper product_slider">
                <div class="swiper-wrapper">
                   @foreach($categories as $category)
-                  <div class="swiper-slide">
+                  @if(!empty($category['image']))
+				  <div class="swiper-slide">
                      <div class="service__item style2">
                         <div class="service__content">
                            <div class="icon-box">
@@ -49,7 +50,7 @@
                            <a href="{{ url($category['category_url']) }}">
                               <div class="service__title">{{ $category['category_name'] }}</div>
                            </a>
-                           <p>@php echo $category['description']; @endphp</p>
+                           <p class="service_description">@php echo $category['description']; @endphp</p>
 
                            <a class="db-btn-arrow" href="{{ url($category['category_url']) }}">Read More <i
                                  class="fa-solid fa-arrow-right"></i>
@@ -57,6 +58,7 @@
                         </div>
                      </div>
                   </div>
+				   @endif
                   @endforeach
                </div>
             </div>
@@ -152,10 +154,8 @@
             </div>
             <div class="col-xxl-5 col-xl-5 col-xl-5">
                <div class="service__text  pt-0">
-                  <p class="ms-0" data-aos="fade-left">Explore our wide range of solutions including OEM & ODM bicycle
-                     manufacturing,
-                     premium e-bikes, and high-performance components. Whether you're building your brand or
-                     enhancing your product line, our categories cover everything from innovation to scalability.
+                  <p class="ms-0" data-aos="fade-left">
+				  At NNE, we manufacture and supply a wide range of high-quality mower components and assemblies. Our product range includes tail wheel hubs, laminated tires, wheel assemblies, forks, and essential service parts. Each component is precision-engineered to ensure durability, reliability, and optimal performance. All products are developed to meet strict quality standards for smooth and efficient mower operation.
                   </p>
                </div>
             </div>
@@ -298,11 +298,12 @@
                      class="fa-solid fa-play"></i></span></a> <span class="visibleText">Our Standard</span>
          </h1>
          <div class="hero__contact cxufadeUp2">
-            <a href="#">
+            <a href="{{ route('sustainability') }}">
                <span><i class="fa-solid fa-arrow-right"></i></span>
             </a>
+
             <div class="text">
-               <p>Read More</p>
+               <p class="pointer" onclick="window.location.href='{{ route('sustainability') }}'">Read More</p>
             </div>
          </div>
       </div>
@@ -504,6 +505,8 @@
       </div>
    </div>
 </section>
+
+<?php /*
 <section class="blog__area-4 pt-150 pb-150">
    <div class="container">
       <div class="blog__top-4">
@@ -569,6 +572,7 @@
       </div>
    </div>
 </section>
+*/ ?>
 <section class="newsletter__area bg-light1 pt-120 pb-120">
    <div class="container">
       <div class="row">

@@ -109,3 +109,16 @@
    
    
 /* contact page css end */
+.pointer{ cursor:pointer; }
+.service__content{
+    display:flex;
+    flex-direction:column;
+    height: 480px;
+}
+.service_description{
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
