@@ -46,7 +46,7 @@
 									<a href="{{  $product_url }}"><img src="{{ $product_image; }}" alt="NNE Curl" data-lag="0.3"></a>
 								</div>
 								<div class="portfolio__content-4">
-									<p>Verdant by NNE</p>
+									<?php /*<p>Verdant by NNE</p> */ ?>
 									<a href="{{ $product_url }}">
 										<h2 class="portfolio__title-4">{{ $product['product_name'] }}</h2>
 									</a>

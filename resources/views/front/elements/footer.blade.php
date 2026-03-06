@@ -16,16 +16,22 @@
                               <a href="{{ route('aboutus') }}">About Us</a>
                            </li>
                            <li>
-                              <a href="javascript:;">Our Team</a>
-                           </li>
-                           <li>
-                              <a href="javascript:;">Recent News </a>
-                           </li>
-                           <li>
                               <a href="{{ route('processes') }}">Processes </a>
                            </li>
                            <li>
-                              <a href="{{ route('sustainability') }}">Sustainability </a>
+                              <a href="{{ route('sustainability') }}">Sustainability</a>
+                           </li>
+						   <li>
+                              <a href="https://nneworld.com/about-video/">Virtual Tour</a>
+                           </li>
+						   <li>
+                              <a href="https://nneworld.com/forest-video/">Forest Video</a>
+                           </li>
+						   <li>
+                              <a href="https://forest-factory.eco/">Forest Factory</a>
+                           </li>
+						   <li>
+                              <a href="https://tracking.nneworld.com/login">Tracing </a>
                            </li>
                         </ul>
                      </div>

@@ -122,3 +122,7 @@
     overflow: hidden;
     text-overflow: ellipsis;
 }
+
+.footer__service li a:hover {
+    color: #fff !important;
+}
