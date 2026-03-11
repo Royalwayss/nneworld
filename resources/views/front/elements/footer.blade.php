@@ -5,7 +5,7 @@
                   <div class="col-xxl-3 col-xl-3 col-lg-6 col-md-6 col-12">
                      <div class="footer__logo">
                         <img src="{{ asset('front/assets/imgs/nneWhite.png') }}" title="Logo" alt="Logo">
-                        <p>© NNE World 2025 | All Rights Reserved</p>
+                        <p>© NNE World 2026 | All Rights Reserved</p>
                      </div>
                   </div>
                   <div class="col-xxl-3 col-xl-3 col-lg-6 col-md-6 col-6">

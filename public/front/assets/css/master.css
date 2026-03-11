@@ -4260,6 +4260,7 @@ header.pos-abs {
 .counter__item{
   display: flex;
   justify-content: space-evenly;
+  align-items: center;
 }
 @media (max-width: 1919px) {
   .counter__area-3-hero {
@@ -6694,7 +6695,16 @@ header.pos-abs {
     filter: grayscale(1);
 
 }
+.breadcrumb__area.detailBread{
+  height: auto;
+}
+.breadcrumb__area.detailBread .breadcrumb__inner{
+  padding-top: 24px;
+}
 
+.breadcrumb__area.detailBread::after {
+  background: var(--black-2);
+}
 .breadcrumb__area::after {
     content: "";
     position: absolute;
@@ -7088,7 +7098,7 @@ header.pos-abs {
 .footer__widgets {
   padding-top: 260px;
   padding-bottom: 65px;
-  background-color: var(--main-color-one);
+  background-color: var(--black-2);
 }
 @media (max-width: 991px) {
   .footer__widgets {
@@ -10965,6 +10975,7 @@ HOME FIVE FOOTER
   border-radius: 25px;
   padding: 25px 30px 10px 30px;
   height: 100%;
+  margin-bottom: 10px;
 }
 .contact__item i {
   font-size: 40px;

@@ -22,6 +22,7 @@
     gap: 10px;
     flex-wrap: nowrap;
     justify-content: center;
+    padding: 0 12px 60px 12px;
   }
   .hero__title a {
     width: 63px;
@@ -36,6 +37,13 @@
 }
   .sus .row .about__content  {
     margin-top: 20px;
+}
+.hero__area.sustain{
+  padding: 120px 0;
+}
+.counter__item{
+  flex-direction: column;
+  justify-content: center;
 }
 }
 @media all and (max-width: 575px) {

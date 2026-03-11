@@ -35,7 +35,7 @@ $get_categories = Category::get_categories();
 						    @endforeach
                         </ul>
                      </li>
-                     <li><a href="javacript:;">Brands</a></li>
+                     <li><a href="{{ route('home') }}#brands">Brands</a></li>
                      <li><a href="https://tracking.nneworld.com/login">Tracing</a></li>
                      <li><a href="https://forest-factory.eco/">Forest Factory</a></li>
                      <li>
@@ -135,7 +135,7 @@ $get_categories = Category::get_categories();
                            <li><a href="#">Tail Wheel Hubs</a></li>
                         </ul>
                      </li>
-                     <li><a href="javacript:;">Brands</a></li>
+                     <li><a href="{{ route('home') }}#brands">Brands</a></li>
                      <li><a href="https://tracking.nneworld.com/login">Tracing</a></li>
                      <li class="has-dropdown">
                         <a href="javacript:;">Stories</a>

@@ -4,14 +4,15 @@
 <main>
 
   <!-- Breadcrumb area start -->
-  <section class="breadcrumb__area" style="background-image: url('{{ asset('front/assets/imgs/kidBd.jpg') }}');">
+  <!-- <section class="breadcrumb__area detailBread" style="background-image: url('{{ asset('front/assets/imgs/kidBd.jpg') }}');"> -->
+  <section class="breadcrumb__area detailBread">
     <div class="container">
       <div class="row">
         <div class="col-xxl-12">
           <div class="breadcrumb__inner">
-            <div class="breadcrumb__left">
+            <!-- <div class="breadcrumb__left">
               <h1 class="breadcrumb__title">{{ $productdetails['category']['category_name'] }}</h1>
-            </div>
+            </div> -->
             <div class="breadcrumb__right">
               <ul>
                 <li> <a href="{{ route('home') }}">home</a> </li>

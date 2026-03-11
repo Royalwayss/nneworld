@@ -11,7 +11,7 @@
                 <div class="col-xxl-12">
                     <div class="breadcrumb__inner">
                         <div class="breadcrumb__left">
-                            <h1 class="breadcrumb__title">Home</h1>
+                            <h1 class="breadcrumb__title">About Us</h1>
                         </div>
                         <div class="breadcrumb__right">
                             <ul>

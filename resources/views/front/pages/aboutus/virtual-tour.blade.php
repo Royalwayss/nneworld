@@ -11,11 +11,10 @@
                 <div class="col-xxl-12">
                     <div class="breadcrumb__inner">
                         <div class="breadcrumb__left">
-                            <h1 class="breadcrumb__title">Home</h1>
+                            <h1 class="breadcrumb__title">Virtual Tour</h1>
                         </div>
                         <div class="breadcrumb__right">
                             <ul>
-                                <li> <a href="{{ route('home') }}">Home</a> </li>
 								<li> <a href="{{ route('aboutus') }}">About</a> </li>
                                 <li> <a href="javascript:;">Virtual Tour</a> </li>
                             </ul>

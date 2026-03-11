@@ -67,17 +67,17 @@
 <section class="counter__area bg-white">
    <div class="container">
       <div class="row counter__inner">
-         <div class="col-lg-4 col-md-6 counter__item" data-aos="fade-right">
+         <div class="col-4 counter__item" data-aos="fade-right">
             <div class="counter__number counter_slow style2">75+
             </div>
             <h3 class="counter__title color-heading">Years of <br> Experience </h3>
          </div>
-         <div class="col-lg-4 col-md-6 counter__item" data-aos="fade-right" data-aos-delay="300">
+         <div class="col-4 counter__item" data-aos="fade-right" data-aos-delay="300">
             <div class="counter__number counter_slow style2">25+
             </div>
-            <h3 class="counter__title color-heading">Range of <br> Products </h3>
+            <h3 class="counter__title color-heading">Countries <br> Network</h3>
          </div>
-         <div class="col-lg-4 col-md-6 counter__item" data-aos="fade-right" data-aos-delay="600">
+         <div class="col-4 counter__item" data-aos="fade-right" data-aos-delay="600">
             <div class="counter__number counter_slow style2">1000+
             </div>
             <h3 class="counter__title color-heading">Team <br>Members </h3>
@@ -245,7 +245,7 @@
       </div>
    </div>
 </section>
-<section class="brand__area pt-150 pb-150">
+<section class="brand__area pt-150 pb-150" id="brands">
    <div class="container">
       <div class="row align-items-center">
          <div class="col-lg-3 col-12">
