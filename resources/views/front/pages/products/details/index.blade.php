@@ -38,8 +38,8 @@
 		  @endif
         </div>
         <div class="about__content pt-0">
-          <h2 class="sec-subtitle" data-aos="fade-up" data-aos-delay="100">Verdant Kids
-          </h2>
+          <!-- <h2 class="sec-subtitle" data-aos="fade-up" data-aos-delay="100">Verdant Kids
+          </h2> -->
           <h3 class="sec-title" data-aos="fade-right" data-aos-delay="200">{{ $productdetails['product_name'] }}</h3>
         </div>
         <h2 class="projectd__details-title mb-3"> </h2>

@@ -2,9 +2,10 @@
 @section('content')
 
 <main>
-
     <!-- Breadcrumb area start -->
-    <section class="breadcrumb__area" style="background-image: url('{{ asset('front/assets/imgs/agri.jpg') }}');">
+    <section class="breadcrumb__area" @if(!empty($catdetails['banner']))
+    style="background-image: url('{{ asset('front/assets/images/category_banner/'.$catdetails['banner']) }}');"
+@endif>
         <div class="container">
             <div class="row">
                 <div class="col-xxl-12">

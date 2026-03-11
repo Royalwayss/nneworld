@@ -1,6 +1,7 @@
 @php 
 Use App\Models\Category;
 $get_categories = Category::get_categories();
+$agri_categories = Category::agri_categories();
 @endphp
  <!-- Scroll to top -->
       <button id="scroll_top" class="scroll-top">
@@ -123,16 +124,17 @@ $get_categories = Category::get_categories();
                      <li class="has-dropdown">
                         <a href="javascript:;">Products</a>
                         <ul class="main-dropdown">
-                            @foreach($get_categories as $category)
+                           @foreach($get_categories as $category)
                               <li><a href="{{ url($category['category_url']) }}">{{  $category['category_name'] }}</a></li>
-						    @endforeach
+						         @endforeach
                         </ul>
                      </li>
                        <li class="has-dropdown">
                         <a href="#">Agri Products</a>
                         <ul class="main-dropdown">
-                           <li><a href="#">Tail Wheel Forks</a></li>
-                           <li><a href="#">Tail Wheel Hubs</a></li>
+                           @foreach($agri_categories as $category)
+                              <li><a href="{{ url($category['category_url']) }}">{{  $category['category_name'] }}</a></li>
+						         @endforeach
                         </ul>
                      </li>
                      <li><a href="{{ route('home') }}#brands">Brands</a></li>

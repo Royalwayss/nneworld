@@ -425,7 +425,8 @@
             <div class="brand__inner p-0">
                <div class="swiper brand__slider">
                   <div class="swiper-wrapper">
-                     <div class="swiper-slide">
+                     
+					 <div class="swiper-slide">
                         <div class="brand__slide">
                            <img src="front/assets/imgs/brand/acer.svg" alt="img" title="img">
                         </div>
@@ -435,24 +436,9 @@
                            <img src="front/assets/imgs/brand/Decathlon.png" alt="img" title="img">
                         </div>
                      </div>
-                     <div class="swiper-slide">
+                                         <div class="swiper-slide">
                         <div class="brand__slide">
-                           <img src="front/assets/imgs/brand/disney.svg" alt="img" title="img">
-                        </div>
-                     </div>
-                     <div class="swiper-slide">
-                        <div class="brand__slide">
-                           <img src="front/assets/imgs/brand/tvs.svg" alt="img" title="img">
-                        </div>
-                     </div>
-                     <div class="swiper-slide">
-                        <div class="brand__slide">
-                           <img src="front/assets/imgs/brand/firefox.svg" alt="img" title="img">
-                        </div>
-                     </div>
-                     <div class="swiper-slide">
-                        <div class="brand__slide">
-                           <img src="front/assets/imgs/brand/ninOne.svg" alt="img" title="img">
+                           <img src="front/assets/imgs/brand/firefox.jpg" alt="img" title="img">
                         </div>
                      </div>
                      <div class="swiper-slide">
@@ -460,9 +446,34 @@
                            <img src="front/assets/imgs/brand/huffy.svg" alt="img" title="img">
                         </div>
                      </div>
-                     <div class="swiper-slide">
+                   					 <div class="swiper-slide">
                         <div class="brand__slide">
-                           <img src="front/assets/imgs/brand/hero.svg" alt="img" title="img">
+                           <img src="front/assets/imgs/brand/hero-cycles.jpg" alt="img" title="img">
+                        </div>
+                     </div>
+					  <div class="swiper-slide">
+                        <div class="brand__slide">
+                           <img src="front/assets/imgs/brand/mcleod.png" alt="img" title="img">
+                        </div>
+                     </div>
+					 <div class="swiper-slide">
+                        <div class="brand__slide">
+                           <img src="front/assets/imgs/brand/sun-baby.png" alt="img" title="img">
+                        </div>
+                     </div>
+					 <div class="swiper-slide">
+                        <div class="brand__slide">
+                           <img src="front/assets/imgs/brand/tandem.png" alt="img" title="img">
+                        </div>
+                     </div>
+					 <div class="swiper-slide">
+                        <div class="brand__slide">
+                           <img src="front/assets/imgs/brand/toronto.png" alt="img" title="img">
+                        </div>
+                     </div>
+					 <div class="swiper-slide">
+                        <div class="brand__slide">
+                           <img src="front/assets/imgs/brand/trinity.png" alt="img" title="img">
                         </div>
                      </div>
                   </div>
@@ -472,7 +483,7 @@
       </div>
    </div>
 </section>
-<section class="blog__area-4 pt-150 pb-150">
+<!-- <section class="blog__area-4 pt-150 pb-150">
    <div class="container">
       <div class="blog__top-4">
          <div class="sec-title-wrap">
@@ -536,7 +547,7 @@
          </div>
       </div>
    </div>
-</section>
+</section> -->
 <section class="newsletter__area bg-light1 pt-120 pb-120">
    <div class="container">
       <div class="row">

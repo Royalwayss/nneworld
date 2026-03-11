@@ -8,7 +8,13 @@ class Category extends Model
 {
      public static function get_categories(){
 		$plans = [];
-		$categories = Category::with('sub_categories')->select('id','category_name','category_url','description','image')->where('parent_id',NULL)->where('status','1')->orderby('sortorder','asc')->get()->toArray();
+		$categories = Category::with('sub_categories')->select('id','category_name','category_url','description','image')->where('parent_id',NULL)->where('category_type','normal-products')->where('status','1')->orderby('sortorder','asc')->get()->toArray();
+		return $categories;
+	}
+
+	public static function agri_categories(){
+		$plans = [];
+		$categories = Category::with('sub_categories')->select('id','category_name','category_url','description','image')->where('parent_id',NULL)->where('category_type','agri-products')->where('status','1')->orderby('sortorder','asc')->get()->toArray();
 		return $categories;
 	}
 	
